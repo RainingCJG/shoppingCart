@@ -1,0 +1,317 @@
+/*重置样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul,li{
+	list-style: none;
+}
+
+input{
+	resize: none;
+	border: none;
+}
+
+/*左浮动*/
+.fl{
+	float: left;
+}
+
+/*右浮动*/
+.fr{
+	float: right;
+}
+
+/*隐藏*/
+.none{
+	display: none;
+}
+
+/*清除浮动*/
+.clearfix{
+	zoom: 1;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*购物车*/
+.shopping-cart{
+	display: table;
+	width: 937px;
+	border-collapse: collapse;
+	border: 1px solid #CADEFF;
+	border-top: 3px solid #A7CBFF;
+	text-align: center;
+	margin: 20px auto;
+}
+
+/*购物车表头信息*/
+.table-cart{
+	display: table-header-group;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #E2F2FF;
+	border: 1px solid #CADEFF;
+}
+
+.table-cart .th{
+	display: table-cell;
+	height: 32px;
+	border: 1px solid #CADEFF;
+	font-weight: bold;
+	vertical-align: middle;
+ 	color: #666;
+}
+
+/*每件商品信息*/
+.shopping-cart ul{
+	display: table-header-group;
+}
+
+.shopping-cart ul .td{
+	
+	display: table-cell;
+	border: 1px solid #CADEFF;
+	vertical-align: middle;
+	
+}
+
+.goods{
+	width: 300px;
+	padding: 10px;
+}
+
+/*商品展示*/
+.goods img{
+	float: left;
+	width: 100px;
+	height: 80px;
+	margin-right: 10px;
+}
+
+/*商品说明*/
+.goods span{
+	float: left;
+	width: 180px;
+	margin-top: 20px;
+	text-align: left;
+}
+
+/*价格*/
+.price{
+	display: block;
+	width: 130px;
+	padding: 10px;
+}
+
+/*数量*/
+.goods-counts{
+	width: 90px;
+	padding: 10px;
+}
+
+/*加减按钮*/
+.reduce,.add{
+	position: relative;
+	float: left;
+	width: 17px;
+	height: 23px;
+	background-color: #f0f0f0;
+    border: 1px solid #e5e5e5;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.reduce:hover,
+.add:hover{
+	z-index: 2;
+	border: 1px solid #FF5500;
+	color: #FF5500;
+}
+
+.reduce{
+	margin-right: -1px;
+}
+.add{
+	margin-left: -1px;
+}
+
+/*数量*/
+.count{
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: 48px;
+	height: 23px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+/*总价*/
+.total-price{
+	display: block;
+	width: 150px;
+	padding: 10px;
+	color: #FF3737;
+	font-weight: bold;
+}
+
+/*删除按钮*/
+.del{
+	width: 100px;
+}
+
+.delete:hover{
+	color: #FF5500;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*结算*/
+.tfoot{
+	position: relative;
+	width: 937px;
+	height: 48px;
+	border: 1px solid #c8c8c8;
+	background-color: #F1F1F1;
+	margin: 20px auto 0;
+	line-height: 48px;
+	color: #666;
+}
+
+.tfoot label{
+	margin-left: 10px;
+}
+
+/*删除全部*/
+.del-all{
+	color: #666;
+	padding: 0 20px;
+}
+
+/*选择全部*/
+.selected{
+	height: 100%;
+	margin-right: 40px;
+	cursor: pointer;
+}
+
+/*总计*/
+.total{
+	width: 150px;
+	text-align: left;
+	cursor: pointer;
+}
+
+/*已选商品*/
+.selectedTotal{
+	position: relative;
+}
+
+.priceTotal,.selectedTotal{
+	font-family:"微软雅黑";
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.accounts{
+	width: 100px;
+	text-align: center;
+	border-left: 1px solid #c8c8c8;
+	background-color: #eee;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.arrow{
+	position: relative;
+	margin-left: 3px;
+}
+
+.arrow:hover{
+	color: #FF0000;
+}
+
+.up{
+	top: -3px;
+}
+
+.down{
+	top: 3px;
+	display: none;
+}
+
+/*预览选中商品*/
+.selected-view{
+	position: absolute;
+	width: 896px;
+	padding: 20px;
+	bottom: 48px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	z-index: 2;
+}
+
+.selectedViewList{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 80px;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+}
+
+.selectedViewList img{
+	width: 100px;
+	height: 80px;
+}
+
+.selectedViewList span{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 18px;
+	font-size: 12px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+	text-align: center;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.selectedViewList:hover span{
+	display: block;
+}
+
+.arrow-icon{
+	position: absolute;
+	bottom: 25px;
+	right: 360px;
+	color: #ccc;
+	z-index: 2;
+}
+
+.arrow-border{
+	position: absolute;
+    left: 0;
+	top: -1px;
+	color: #fff;
+}
+
+
+

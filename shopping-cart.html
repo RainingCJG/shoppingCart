@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车效果</title>
+		<link rel="stylesheet" href="css/shopping-cart.css" />
+		<script type="text/javascript" src="js/shopping-cart.js"></script>
+	</head>
+	<body>
+		<div class="shopping-cart">
+			<!--购物车表头-->
+			<div class="table-cart">
+				<div class="th"><label><input type="checkbox" class="check check-all" />&nbsp;全选</label></div>
+				<div class="th">商品</div>
+				<div class="th">单价</div>
+				<div class="th">数量</div>
+				<div class="th">小计</div>
+				<div class="th">操作</div>
+			</div>
+			<!--购物车每行内容-->
+			<ul class="tbody">
+				<li class="td"><input type="checkbox" class="check radio" /></li>
+				<li class="td goods"><img src="img/1.jpg" align="" /><span>Casio/卡西欧 EX-TR350</span></li>
+				<li class="td price">5999.88</li>
+				<li class="td goods-counts"><span class="reduce"></span><input type="text" value="1" class="count" /><span class="add">+</span></li>
+				<li class="td total-price">5999.88</li>
+				<li class="td del"><span class="delete">删除</span></li>
+			</ul>
+			<!--购物车每行内容-->
+			<ul class="tbody">
+				<li class="td"><input type="checkbox" class="check radio" /></li>
+				<li class="td goods"><img src="img/2.jpg" align="" /><span>Canon/佳能 PowerShot SX50 HS</span></li>
+				<li class="td price">3888.50</li>
+				<li class="td goods-counts"><span class="reduce"></span><input type="text" value="1" class="count" /><span class="add">+</span></li>
+				<li class="td total-price">3888.50</li>
+				<li class="td del"><span class="delete">删除</span></li>
+			</ul>
+			<!--购物车每行内容-->
+			<ul class="tbody">
+				<li class="td"><input type="checkbox" class="check radio" /></li>
+				<li class="td goods"><img src="img/3.jpg" align="" /><span>Sony/索尼 DSC-WX300</span></li>
+				<li class="td price">1428.50</li>
+				<li class="td goods-counts"><span class="reduce"></span><input type="text" value="1" class="count" /><span class="add">+</span></li>
+				<li class="td total-price">1428.50</li>
+				<li class="td del"><span class="delete">删除</span></li>
+			</ul>
+			<!--购物车每行内容-->
+			<ul class="tbody">
+				<li class="td"><input type="checkbox" class="check radio" /></li>
+				<li class="td goods"><img src="img/4.jpg" align="" /><span>Fujifilm/富士 instax mini 25</span></li>
+				<li class="td price">640.60</li>
+				<li class="td goods-counts"><span class="reduce"></span><input type="text" value="1" class="count" /><span class="add">+</span></li>
+				<li class="td total-price">640.60</li>
+				<li class="td del"><span class="delete">删除</span></li>
+			</ul>
+		</div>
+		<!--购物车表尾-->
+		<div class="tfoot">
+			<label><input type="checkbox" class="check check-all" />&nbsp;全选</label>
+			<a class="delete del-all" href="javascript:;">删除</a>
+			<div class="fr accounts">结 算</div>
+			<div class="fr total">合计：￥<span class="priceTotal">0.00</span></div>
+			<div class="fr selected">已选商品<span class="selectedTotal">0</span>件<span class="arrow up">︽</span><span class="arrow down">︾</span></div>
+			<div class="selected-view none"></div>
+	   		<span class="arrow-icon none">◆<span class="arrow-border">◆</span></span>
+		</div>
+	</body>
+</html>
